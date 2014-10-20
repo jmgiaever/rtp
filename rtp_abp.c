@@ -5,7 +5,7 @@
 /* The following routine will be called once (only) before any other */
 /* entity A routines are called. You can use it to do any initialization */
 void A_init() {
-
+	
 }
 
 /* called from layer 3, when a packet arrives for layer 4 */

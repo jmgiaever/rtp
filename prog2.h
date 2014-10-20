@@ -68,4 +68,14 @@ void B_output( msg_t message ); /* need be completed only for extra credit */
 /* called when B's timer goes off */
 void B_timerinterrupt();
 
+/** 
+ * STUDENT CALLABLE FUNCTIONS: Dont implement (they allready are, int prog2.c)
+ **/
+void starttimer( int AorB, float increment );
+/* called by students routine to cancel a previously-started timer */
+void stoptimer(int AorB);
+/* TOLAYER3 */
+void tolayer3( int AorB, pkt_t packet );
+/* TOLAYER5 */
+void tolayer5(int AorB, char datasent[20]);
 #endif
