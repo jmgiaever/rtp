@@ -7,7 +7,7 @@ all: abp gbn
 main: abp
 
 abp: $(RTPABP_SRC) $(HEADERS) Makefile
-	gcc -o -Wall $@ $(RTPABP_SRC) -I -g -lm
+	gcc -o $@ $(RTPABP_SRC) -g -lm
 
 gbn: $(RTPGBN_SRC) $(HEADERS) Makefile
 	gcc -o $@ $(RTPGBN_SRC) -g -lm
