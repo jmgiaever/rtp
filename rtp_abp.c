@@ -2,10 +2,6 @@
 #include <stdio.h>
 #include "prog2.h"
 
-/* change to 1 if you're doing extra credit */
-/* and write a routine called B_output */
-#define BIDIRECTIONAL 0
-
 /* The following routine will be called once (only) before any other */
 /* entity A routines are called. You can use it to do any initialization */
 void A_init() {

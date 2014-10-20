@@ -7,10 +7,10 @@ all: abp gbn
 main: abp
 
 abp: $(RTPABP_SRC) $(HEADERS) Makefile
-	gcc -o $@ $(RTPABP_SRC) -g -lm
+	gcc -o $@ $(RTPABP_SRC) -Wall -I -g -lm -DBIDIRECTIONAL=0
 
 gbn: $(RTPGBN_SRC) $(HEADERS) Makefile
-	gcc -o $@ $(RTPGBN_SRC) -g -lm
+	gcc -o $@ $(RTPGBN_SRC) -Wall -g -lm -DBIDIRECTIONAL=1
 
 clean:
 	rm -f *~ *.o *.exe *.stackdump abp gbn

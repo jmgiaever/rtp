@@ -68,8 +68,6 @@ int main() {
     A_init();
     B_init();
 
-    printf( "BI %d", BIDIRECTIONAL );
-
     while (1) {
 
         /* get next event to simulate */
