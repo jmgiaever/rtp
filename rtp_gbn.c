@@ -2,6 +2,9 @@
 #include <stdio.h>
 #include "prog2.h"
 
+extern int nsimmax;
+extern float lambda;
+
 /* The following routine will be called once (only) before any other */
 /* entity A routines are called. You can use it to do any initialization */
 void A_init() {
