@@ -36,6 +36,18 @@ struct event {
     event_t *next;
 };
 
+event_t *evlist = NULL;   /* the event list */
+
+/* possible events: */
+#define TIMER_INTERRUPT    0
+#define FROM_LAYER5        1
+#define FROM_LAYER3        2
+
+#define OFF                0
+#define ON                 1
+#define A                  0
+#define B                  1
+
 void insertevent(struct event *p);
 void init();
 void generate_next_arrival();

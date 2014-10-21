@@ -32,18 +32,6 @@ the emulator, you're welcome to look at the code - but again, you should have
 to, and you defeinitely should not have to modify
 ******************************************************************/
 
-event_t *evlist = NULL;   /* the event list */
-
-/* possible events: */
-#define TIMER_INTERRUPT    0
-#define FROM_LAYER5        1
-#define FROM_LAYER3        2
-
-#define OFF                0
-#define ON                 1
-#define A                  0
-#define B                  1
-
 int TRACE = 1;             /* for my debugging */
 int nsim = 0;              /* number of messages from 5 to 4 so far */ 
 int nsimmax = 0;           /* number of msgs to generate, then stop */
