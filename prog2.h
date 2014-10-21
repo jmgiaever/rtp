@@ -36,8 +36,6 @@ struct event {
     event_t *next;
 };
 
-event_t *evlist = NULL;   /* the event list */
-
 /* possible events: */
 #define TIMER_INTERRUPT    0
 #define FROM_LAYER5        1

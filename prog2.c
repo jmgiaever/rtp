@@ -32,6 +32,8 @@ the emulator, you're welcome to look at the code - but again, you should have
 to, and you defeinitely should not have to modify
 ******************************************************************/
 
+event_t *evlist = NULL;   /* the event list */
+
 int TRACE = 1;             /* for my debugging */
 int nsim = 0;              /* number of messages from 5 to 4 so far */ 
 int nsimmax = 0;           /* number of msgs to generate, then stop */
